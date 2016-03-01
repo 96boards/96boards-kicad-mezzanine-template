@@ -47,10 +47,10 @@ $EndDescr
 Text GLabel 3950 1500 0    60   Output ~ 0
 UART0_RTS
 $Comp
-L GND #PWR01
+L GND #PWR9
 U 1 1 55D481C7
 P 3950 950
-F 0 "#PWR01" H 3950 700 50  0001 C CNN
+F 0 "#PWR9" H 3950 700 50  0001 C CNN
 F 1 "GND" H 3950 800 50  0000 C CNN
 F 2 "" H 3950 950 60  0000 C CNN
 F 3 "" H 3950 950 60  0000 C CNN
@@ -60,10 +60,10 @@ $EndComp
 Text GLabel 3950 1300 0    60   Output ~ 0
 UART0_TX
 $Comp
-L GND #PWR02
+L GND #PWR10
 U 1 1 55D481CF
 P 4000 3000
-F 0 "#PWR02" H 4000 2750 50  0001 C CNN
+F 0 "#PWR10" H 4000 2750 50  0001 C CNN
 F 1 "GND" H 4000 2850 50  0000 C CNN
 F 2 "" H 4000 3000 60  0000 C CNN
 F 3 "" H 4000 3000 60  0000 C CNN
@@ -71,10 +71,10 @@ F 3 "" H 4000 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L GND #PWR12
 U 1 1 55D481D5
 P 4700 3000
-F 0 "#PWR03" H 4700 2750 50  0001 C CNN
+F 0 "#PWR12" H 4700 2750 50  0001 C CNN
 F 1 "GND" H 4700 2850 50  0000 C CNN
 F 2 "" H 4700 3000 60  0000 C CNN
 F 3 "" H 4700 3000 60  0000 C CNN
@@ -86,10 +86,10 @@ UART0_CTS
 Text GLabel 4700 2900 2    60   Input ~ 0
 SYS_DCIN
 $Comp
-L GND #PWR04
+L GND #PWR13
 U 1 1 55D48218
 P 4750 950
-F 0 "#PWR04" H 4750 700 50  0001 C CNN
+F 0 "#PWR13" H 4750 700 50  0001 C CNN
 F 1 "GND" H 4750 800 50  0000 C CNN
 F 2 "" H 4750 950 60  0000 C CNN
 F 3 "" H 4750 950 60  0000 C CNN
@@ -110,10 +110,10 @@ F 5 "F240-1220A0xMUx1" H 4350 2050 60  0001 C CNN "Mfr Part #"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V8 #PWR05
+L +1V8 #PWR8
 U 1 1 55D4822C
 P 3450 2750
-F 0 "#PWR05" H 3450 2600 50  0001 C CNN
+F 0 "#PWR8" H 3450 2600 50  0001 C CNN
 F 1 "+1V8" H 3450 2890 50  0000 C CNN
 F 2 "" H 3450 2750 60  0000 C CNN
 F 3 "" H 3450 2750 60  0000 C CNN
@@ -121,10 +121,10 @@ F 3 "" H 3450 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR06
+L +5V #PWR7
 U 1 1 55D48233
 P 3250 2750
-F 0 "#PWR06" H 3250 2600 50  0001 C CNN
+F 0 "#PWR7" H 3250 2600 50  0001 C CNN
 F 1 "+5V" H 3250 2890 50  0000 C CNN
 F 2 "" H 3250 2750 60  0000 C CNN
 F 3 "" H 3250 2750 60  0000 C CNN
@@ -132,7 +132,7 @@ F 3 "" H 3250 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4700 1300 2    60   Input ~ 0
-RST_BTN_N
+RST_BTN_BMC
 Text GLabel 3950 2100 0    60   BiDi ~ 0
 I2C1_SDA
 Text GLabel 3950 2000 0    60   BiDi ~ 0
@@ -145,10 +145,8 @@ Text GLabel 3950 2200 0    60   Input ~ 0
 GPIO_A
 Text GLabel 3950 1400 0    60   Input ~ 0
 UART0_RX
-Text Notes 875  5350 0    60   ~ 0
-96Boards Low-Speed Expansion Connectors\n\nBy default, this is set up for a stackable surface-mount\narrangement. Do the following to switch to a through-hole\nconnector:\n\nOption 1) For a surface-mount non-stackable connector\n- Delete P2\n\nOption 2) For a through-hole non-stackable pin header\n- Delete P2\n- Change P1 footprint to "Pin_Header_Straight_2x20_Pitch2mm"\n\nOption 3) For a through-hole stackable socket strip connector\n- Delete P1\n- Change P2 footprint to "Socket_Strip_Straight_2x20_Pitch2mm"\n\nOption 2 and 3 are electrically equivalent. They differ on which side\nof the board to place the silkscreen labels.\n\nDelete this note once you have chosen the connector style.
 Text GLabel 4700 1200 2    60   Input ~ 0
-PWR_BTN_N
+PWR_BTN_BMC
 Text GLabel 3950 1600 0    60   Input ~ 0
 UART1_TX
 Text GLabel 3950 2300 0    60   Input ~ 0
@@ -287,10 +285,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 1500 3950 1500
 $Comp
-L GND #PWR07
+L GND #PWR3
 U 1 1 55BEAA68
 P 1500 950
-F 0 "#PWR07" H 1500 700 50  0001 C CNN
+F 0 "#PWR3" H 1500 700 50  0001 C CNN
 F 1 "GND" H 1500 800 50  0000 C CNN
 F 2 "" H 1500 950 60  0000 C CNN
 F 3 "" H 1500 950 60  0000 C CNN
@@ -298,10 +296,10 @@ F 3 "" H 1500 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L GND #PWR4
 U 1 1 55BEA10A
 P 1550 3000
-F 0 "#PWR08" H 1550 2750 50  0001 C CNN
+F 0 "#PWR4" H 1550 2750 50  0001 C CNN
 F 1 "GND" H 1550 2850 50  0000 C CNN
 F 2 "" H 1550 3000 60  0000 C CNN
 F 3 "" H 1550 3000 60  0000 C CNN
@@ -309,10 +307,10 @@ F 3 "" H 1550 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR5
 U 1 1 55BEA0BC
 P 2250 3000
-F 0 "#PWR09" H 2250 2750 50  0001 C CNN
+F 0 "#PWR5" H 2250 2750 50  0001 C CNN
 F 1 "GND" H 2250 2850 50  0000 C CNN
 F 2 "" H 2250 3000 60  0000 C CNN
 F 3 "" H 2250 3000 60  0000 C CNN
@@ -322,10 +320,10 @@ $EndComp
 Text GLabel 2250 2900 2    60   Input ~ 0
 SYS_DCIN
 $Comp
-L GND #PWR010
+L GND #PWR6
 U 1 1 55D43BD4
 P 2300 950
-F 0 "#PWR010" H 2300 700 50  0001 C CNN
+F 0 "#PWR6" H 2300 700 50  0001 C CNN
 F 1 "GND" H 2300 800 50  0000 C CNN
 F 2 "" H 2300 950 60  0000 C CNN
 F 3 "" H 2300 950 60  0000 C CNN
@@ -346,10 +344,10 @@ F 5 "P220-1220A0xMxxxx2" H 1900 2050 60  0001 C CNN "Mfr Part #"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V8 #PWR011
+L +1V8 #PWR2
 U 1 1 55D43CFB
 P 1000 2750
-F 0 "#PWR011" H 1000 2600 50  0001 C CNN
+F 0 "#PWR2" H 1000 2600 50  0001 C CNN
 F 1 "+1V8" H 1000 2890 50  0000 C CNN
 F 2 "" H 1000 2750 60  0000 C CNN
 F 3 "" H 1000 2750 60  0000 C CNN
@@ -357,10 +355,10 @@ F 3 "" H 1000 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR012
+L +5V #PWR1
 U 1 1 55D440FD
 P 800 2750
-F 0 "#PWR012" H 800 2600 50  0001 C CNN
+F 0 "#PWR1" H 800 2600 50  0001 C CNN
 F 1 "+5V" H 800 2890 50  0000 C CNN
 F 2 "" H 800 2750 60  0000 C CNN
 F 3 "" H 800 2750 60  0000 C CNN
@@ -531,11 +529,57 @@ Pins connecting to BASEBOARD
 Text Notes 4075 825  0    60   ~ 0
 Pins for BMC
 Wire Notes Line
-	675  650  675  5475
+	5300 3200 700  3200
 Wire Notes Line
-	675  5475 5600 5475
+	700  3200 700  700 
 Wire Notes Line
-	5600 5475 5600 650 
-Wire Notes Line
-	5600 650  675  650 
+	700  700  5300 700 
+Text GLabel 2950 4150 0    60   Input ~ 0
+RST_BTN_BMC
+Text GLabel 2950 3850 0    60   Input ~ 0
+PWR_BTN_BMC
+$Comp
+L SPST SW1
+U 1 1 56D59D87
+P 3550 3850
+F 0 "SW1" H 3550 4116 50  0000 C CNN
+F 1 "PWR" H 3550 4024 50  0000 C CNN
+F 2 "" H 3550 3850 50  0000 C CNN
+F 3 "" H 3550 3850 50  0000 C CNN
+	1    3550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW2
+U 1 1 56D59DC4
+P 3550 4150
+F 0 "SW2" H 3550 4416 50  0000 C CNN
+F 1 "RST" H 3550 4324 50  0000 C CNN
+F 2 "" H 3550 4150 50  0000 C CNN
+F 3 "" H 3550 4150 50  0000 C CNN
+	1    3550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3850 3050 3850
+Wire Wire Line
+	2950 4150 3050 4150
+$Comp
+L GND #PWR11
+U 1 1 56D59F1C
+P 4150 4250
+F 0 "#PWR11" H 4150 4000 50  0001 C CNN
+F 1 "GND" H 4158 4076 50  0000 C CNN
+F 2 "" H 4150 4250 50  0000 C CNN
+F 3 "" H 4150 4250 50  0000 C CNN
+	1    4150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4250 4150 3850
+Wire Wire Line
+	4150 3850 4050 3850
+Wire Wire Line
+	4050 4150 4150 4150
+Connection ~ 4150 4150
 $EndSCHEMATC
