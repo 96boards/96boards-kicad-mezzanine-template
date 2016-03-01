@@ -29,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:96boards
-LIBS:mezza-cache
+LIBS:mezzanine-open-bmc-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -526,10 +526,10 @@ Wire Wire Line
 	1500 1700 1650 1700
 Wire Wire Line
 	1650 1500 1500 1500
-Text Notes 1375 825  0    60   ~ 0
-Bottom-side Pin Header
-Text Notes 3925 825  0    60   ~ 0
-Top Side Socket Strip
+Text Notes 1225 825  0    60   ~ 0
+Pins connecting to BASEBOARD
+Text Notes 4075 825  0    60   ~ 0
+Pins for BMC
 Wire Notes Line
 	675  650  675  5475
 Wire Notes Line
